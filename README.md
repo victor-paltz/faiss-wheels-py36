@@ -1,10 +1,10 @@
-# faiss-wheels
+# faiss-wheels-py36
 
 [![Build](https://github.com/kyamagu/faiss-wheels/actions/workflows/build.yml/badge.svg)](https://github.com/kyamagu/faiss-wheels/actions/workflows/build.yml)
 [![PyPI](https://img.shields.io/pypi/v/faiss-cpu?label=faiss-cpu)](https://pypi.org/project/faiss-cpu/)
 [![PyPI](https://img.shields.io/pypi/v/faiss-gpu?label=faiss-gpu)](https://pypi.org/project/faiss-gpu/)
 
-faiss python wheel packages.
+faiss python wheel packages that still works for python3.6.
 
 - [faiss](https://github.com/facebookresearch/faiss)
 
