@@ -11,7 +11,7 @@ on:
 jobs:
   build_sdist:
     name: Build sdist
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
       - uses: actions/checkout@v3
@@ -37,20 +37,20 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-20.04, macos-10.15]
         arch: [auto64]
         gpu: [OFF]
         opt_level: [avx2]
         include:
-          - os: windows-latest
+          - os: windows-2019
             arch: auto64
             gpu: OFF
             opt_level: generic
-          - os: ubuntu-latest
+          - os: ubuntu-20.04
             arch: aarch64
             gpu: OFF
             opt_level: generic
-          - os: macos-latest
+          - os: macos-10.15
             arch: arm64
             gpu: OFF
             opt_level: generic
@@ -93,7 +93,7 @@ jobs:
   publish:
     name: Upload packages to PyPI
     needs: [build_sdist, build_wheels]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     if: github.event_name == 'release' && github.event.action == 'published'
     steps:
       - uses: actions/download-artifact@v3
