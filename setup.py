@@ -194,7 +194,7 @@ setup(
         'vectors.'
     ),
     long_description=LONG_DESCRIPTION,
-    url='https://github.com/kyamagu/faiss-wheels',
+    url='https://github.com/victor-paltz/faiss-wheels-py36',
     author='Kota Yamaguchi',
     author_email='KotaYamaguchi1984@gmail.com',
     license='MIT',
@@ -216,11 +216,11 @@ setup(
         'Operating System :: MacOS :: MacOS X',
         'Operating System :: Microsoft :: Windows',
         'Operating System :: POSIX',
+        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
-        'Programming Language :: Python :: 3.11',
         'Topic :: Scientific/Engineering :: Artificial Intelligence',
     ],
 )
