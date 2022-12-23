@@ -5,7 +5,7 @@ from setuptools import setup
 from setuptools.command.build_py import build_py
 from setuptools.extension import Extension
 
-NAME = 'faiss-cpu'
+NAME = 'faiss-cpu-py36'
 VERSION = '1.7.3'
 
 LONG_DESCRIPTION = """
@@ -128,7 +128,7 @@ elif sys.platform == 'darwin':
         ]
 
 if FAISS_ENABLE_GPU:
-    NAME = 'faiss-gpu'
+    NAME = 'faiss-gpu-py36'
     CUDA_HOME = os.getenv('CUDA_HOME', '/usr/local/cuda')
     INCLUDE_DIRS += [os.path.join(CUDA_HOME, 'include')]
     LIBRARY_DIRS += [os.path.join(CUDA_HOME, 'lib64')]
