@@ -21,7 +21,7 @@ addopts = [
 testpaths = ["faiss/tests"]
 
 [tool.cibuildwheel]
-skip = "cp36-* pp* *-musllinux*"
+skip = "pp* *-musllinux*"
 test-skip = "*-macosx_arm64 *-manylinux_aarch64"
 
 test-requires = ["pytest", "scipy"]
