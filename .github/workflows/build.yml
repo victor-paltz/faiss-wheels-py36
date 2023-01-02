@@ -103,5 +103,5 @@ jobs:
 
       - uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          user: ${{ secrets.PYPI_USERNAME }}
-          password: ${{ secrets.PYPI_PASSWORD_2 }}
+          user: ${{ secrets.PYPI_USERNAME_2 }}
+          password: ${{ secrets.PYPI_PASSWORD_3 }}
